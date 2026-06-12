@@ -80,8 +80,8 @@ export const About: React.FC = () => {
     <div className="container section">
       {/* Intro Header */}
       <div style={{ textAlign: 'center', maxWidth: '700px', margin: '0 auto 60px' }}>
-        <h1 style={{ fontSize: '3rem', marginBottom: '16px' }} className="text-gradient">Our Journey</h1>
-        <p style={{ fontSize: '1.1rem' }}>
+        <h1 className="about-main-title text-gradient">Our Journey</h1>
+        <p className="about-main-desc">
           Over 14 years of helping enterprises, startups, and businesses adapt to the fast-moving technological landscape. We grow alongside technology so that our clients always stay ahead.
         </p>
       </div>
@@ -110,7 +110,7 @@ export const About: React.FC = () => {
 
       {/* Timeline Section */}
       <div className="timeline-section">
-        <h2 className="reveal-item" style={{ textAlign: 'center', fontSize: '2rem', marginBottom: '48px' }}>Our Evolutionary Milestone</h2>
+        <h2 className="reveal-item about-section-title">Our Evolutionary Milestone</h2>
         <div className="timeline-line"></div>
         <div className="timeline-items-wrapper">
           {timelineStages.map((stage, index) => (
@@ -145,7 +145,7 @@ export const About: React.FC = () => {
 
       {/* Core Philosophy */}
       <section style={{ marginTop: '80px' }}>
-        <h2 className="reveal-item" style={{ textAlign: 'center', fontSize: '2rem', marginBottom: '40px' }}>Core Philosophy</h2>
+        <h2 className="reveal-item about-section-title" style={{ marginBottom: '40px' }}>Core Philosophy</h2>
         <div className="services-grid">
           <div className="glass-card spotlight-card reveal-item" style={{ textAlign: 'center' }} onMouseMove={handleCardMouseMove}>
             <div className="service-icon-wrap" style={{ margin: '0 auto 20px' }}>

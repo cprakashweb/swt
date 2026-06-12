@@ -73,7 +73,6 @@ export const Header: React.FC<HeaderProps> = ({ activeTab, setActiveTab, onToggl
             <div className="logo-text-title">
               <span className="logo-sketch-word">Sketch</span> Web Tech
             </div>
-            <div className="logo-tagline">Crafting Intelligent Digital Experiences</div>
           </div>
         </div>
 

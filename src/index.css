@@ -686,6 +686,21 @@ a {
 }
 
 /* --- ABOUT PAGE --- */
+.about-main-title {
+  font-size: 3rem;
+  margin-bottom: 16px;
+}
+
+.about-main-desc {
+  font-size: 1.1rem;
+}
+
+.about-section-title {
+  text-align: center;
+  font-size: 2.25rem;
+  margin-bottom: 48px;
+}
+
 .metrics-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1134,26 +1149,28 @@ textarea.form-input {
   }
   .timeline-dot {
     left: 24px;
+    top: 22px;
+    transform: translate(-50%, 0) scale(0.4);
+  }
+  .timeline-item.reveal-active .timeline-dot {
+    transform: translate(-50%, 0) scale(1.25);
   }
   .timeline-item {
-    grid-template-columns: 1fr;
-    gap: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
     padding-left: 56px;
   }
-  .timeline-item:nth-child(even) .timeline-content-wrapper {
-    grid-column: 1;
-  }
-  .timeline-item:nth-child(even) .timeline-meta {
-    grid-column: 1;
-    text-align: left;
+  .timeline-meta {
+    order: -1;
+    margin-top: 0;
+    font-size: 1.25rem;
+    text-align: left !important;
   }
   .timeline-content-wrapper {
-    grid-column: 1;
-  }
-  .timeline-meta {
-    grid-column: 1;
-    margin-top: -8px;
-    font-size: 1.15rem;
+    width: 100%;
+    padding: 20px;
   }
 }
 
@@ -1210,6 +1227,68 @@ textarea.form-input {
   /* Add body padding for sticky footer */
   body {
     padding-bottom: 60px;
+  }
+
+  /* Logo Sizing Mobile */
+  .logo-svg {
+    width: 38px;
+    height: 38px;
+  }
+  .logo-text-title {
+    font-size: 1.25rem;
+  }
+  .logo-wrapper {
+    gap: 8px;
+  }
+
+  /* About Page Mobile */
+  .about-main-title {
+    font-size: 2.25rem;
+  }
+  .about-main-desc {
+    font-size: 1.05rem;
+  }
+  .about-section-title {
+    font-size: 1.6rem;
+    margin-bottom: 32px;
+  }
+  .metric-card {
+    padding: 24px 16px;
+  }
+  .metric-number {
+    font-size: 2.75rem;
+  }
+  .metric-label {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-svg {
+    width: 32px;
+    height: 32px;
+  }
+  .logo-text-title {
+    font-size: 1.1rem;
+  }
+  .logo-wrapper {
+    gap: 6px;
+  }
+  .about-main-title {
+    font-size: 1.85rem;
+  }
+  .about-section-title {
+    font-size: 1.4rem;
+  }
+  .timeline-item {
+    padding-left: 44px;
+  }
+  .timeline-line {
+    left: 18px;
+  }
+  .timeline-dot {
+    left: 18px;
+    top: 20px;
   }
 }
 
