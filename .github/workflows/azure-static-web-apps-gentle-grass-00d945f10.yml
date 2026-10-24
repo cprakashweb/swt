@@ -1,4 +1,4 @@
-name: Deploy OpenSkyOuting
+name: Deploy sketchwebtech
 
 on:
   push:
